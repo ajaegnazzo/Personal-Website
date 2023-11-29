@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Coco Gothic';
+    src: url('fonts/coco-gothic.woff2') format('woff2'), /* Modern Browsers */
+         url('fonts/coco-gothic.woff') format('woff'); /* Older Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+header {
+    font-family: 'Coco Gothic', sans-serif;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    position: fixed;
+}
+
+navigation li {
+    list-style: none;
+    display: inline-flex;
+}
