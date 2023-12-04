@@ -1,41 +1,77 @@
 @font-face {
     font-family: 'Coco Gothic';
-    src: url('fonts/coco-gothic.woff2') format('woff2'), /* Modern Browsers */
-         url('fonts/coco-gothic.woff') format('woff'); /* Older Browsers */
+    src: url('fonts/coco-gothic.woff2') format('woff2'),
+         url('fonts/coco-gothic.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-  }
-
-header {
-    font-family: 'Coco Gothic', sans-serif;
-    font-size: 40px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 5;
-    position: fixed;
 }
 
-.name {
-    font-size: 30px;
-    margin-left: 10px;
-}
-
-.navigation {
-    list-style: none;
+body {
     margin: 0;
     padding: 0;
 }
 
+header {
+    font-family: 'Coco Gothic', sans-serif;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellow;
+    position: sticky;
+    opacity: 1;
+    color: white;
+    top: 0; /* this makes sure that the header is bound to the top of the page, don't change this */
+    z-index: 2;
+}
+
 .navigation li {
+    list-style: none;
     display: inline-flex;
     margin-right: 30px;
     margin-left: 0px;
+    text-align: center;
 }
 
 .navigation a {
     text-decoration: none;
-    color: #000;
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(167, 30, 167);
+}
+
+main {
+    width: 100%;
+}
+
+.cover {
+    background-color: yellow;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff
 }
