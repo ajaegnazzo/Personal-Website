@@ -96,6 +96,12 @@ section {
     padding: 20px;
 }
 
+.works-title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 .what-works {
     display: flex;
     flex-wrap: wrap;
@@ -136,3 +142,62 @@ footer {
     color: #fff
 }
 
+.done {
+    padding: 20px;
+}
+
+.work-experience,
+.education {
+    margin-bottom: 30px;
+}
+
+.work-entry,
+.education-entry {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-entry li {
+    list-style: none;
+    display: inline-flex;
+    margin: 10px;
+    padding: 10px;
+}
+
+.work-entry h4, .work-entry p {
+    margin: 0; /* Remove default margins for h4 and p elements */
+}
+
+.section-box {
+    border-top: 1px solid black; /* Top border */
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.expand-button {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: #3498db; /* Adjust the color as needed */
+}
+
+/* Hide the expanded text by default */
+.expanded-text {
+    display: none;
+}
+
+/* Adjust the style for the expanded text */
+.expanded-text li {
+    list-style: none;
+    text-align: left;
+    margin: 10px 0;
+}
+
+/* Show the expanded text when the button is clicked */
+.expanded {
+    display: block;
+}
