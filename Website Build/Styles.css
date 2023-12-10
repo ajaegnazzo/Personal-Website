@@ -1,3 +1,5 @@
+/* General Styling */
+
 @font-face {
     font-family: 'Coco Gothic';
     src: url('fonts/coco-gothic.woff2') format('woff2'),
@@ -16,6 +18,13 @@ body {
     padding: 0;
 }
 
+main {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Navigation/Header */
+
 header {
     width: 100%;
     height: 80px;
@@ -30,7 +39,7 @@ header {
     z-index: 2;
 }
 
-.navgiation {
+.navigation {
     text-align: center;
     margin: 0 auto;
 }
@@ -52,11 +61,6 @@ header {
 
 .navigation a:hover {
     color: #ecf0f1
-}
-
-main {
-    width: 100%;
-    padding: 20px;
 }
 
 .cover {
@@ -81,9 +85,7 @@ main {
     margin-bottom: 20px;
 }
 
-section {
-    /* margin-bottom: 40px; */
-}
+/* About Section */
 
 .am {
     background-color: #3498db;
@@ -142,38 +144,88 @@ footer {
     color: #fff
 }
 
+/* CV Section */
+
 .done {
     padding: 20px;
 }
 
-.work-experience,
-.education {
-    margin-bottom: 30px;
+.done h2 {
+    border-bottom: 4px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 20px; 
 }
 
-.work-entry,
-.education-entry {
-    text-align: center;
-    margin: 0 auto;
+.done h3 {
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.cv-category {
+    margin-bottom: 40px;
+}
+
+.cv-container {
     display: flex;
-    justify-content: space-between;
+    border: 2px solid black;
 }
 
-.work-entry li {
-    list-style: none;
-    display: inline-flex;
-    margin: 10px;
+.cv-where-box {
+    border: 2px solid black;
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.where {
+    font-size: 30px;
+    display: flex;
+    text-align: center;
+}
+
+.cv-box {
+    display: flex;
+    flex-direction: column;
     padding: 10px;
+    margin: 0 auto;
+    border: 2px solid black;
+    width: 100%;
 }
 
-.work-entry h4, .work-entry p {
-    margin: 0; /* Remove default margins for h4 and p elements */
+.cv-category-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
 }
 
-.section-box {
-    border-top: 1px solid black; /* Top border */
-    padding: 0px;
-    margin-bottom: 0px;
+.cv-category-content.expanded .expanded-text {
+    display: block;
+    flex-basis: 100%;
+}
+.cv-category-content .expanded-text {
+    display: none;
+    flex-basis: 100%;
+}
+
+.when,
+.what,
+.location,
+.expand-button {
+    flex: 1;
+    text-align: left;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.when span,
+.what span,
+.location span, 
+.expand-button span {
+    display: block;
 }
 
 .expand-button {
@@ -188,6 +240,7 @@ footer {
 /* Hide the expanded text by default */
 .expanded-text {
     display: none;
+    flex-basis: 100%;
 }
 
 /* Adjust the style for the expanded text */
@@ -199,5 +252,6 @@ footer {
 
 /* Show the expanded text when the button is clicked */
 .expanded {
-    display: block;
+    display: flex;
 }
+
